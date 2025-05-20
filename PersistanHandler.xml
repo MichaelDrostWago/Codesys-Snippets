@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://www.plcopen.org/xml/tc6_0200">
+  <fileHeader companyName="" productName="CODESYS" productVersion="CODESYS V3.5 SP19 Patch 7" creationDateTime="2025-05-20T11:44:16.4886633" />
+  <contentHeader name="Recipes.project" modificationDateTime="2025-05-20T11:43:41.0288875">
+    <coordinateInfo>
+      <fbd>
+        <scaling x="1" y="1" />
+      </fbd>
+      <ld>
+        <scaling x="1" y="1" />
+      </ld>
+      <sfc>
+        <scaling x="1" y="1" />
+      </sfc>
+    </coordinateInfo>
+    <addData>
+      <data name="http://www.3s-software.com/plcopenxml/projectinformation" handleUnknown="implementation">
+        <ProjectInformation />
+      </data>
+    </addData>
+  </contentHeader>
+  <types>
+    <dataTypes>
+      <dataType name="ST_PERSISTANT_VAR">
+        <baseType>
+          <struct>
+            <variable name="uiCountOnlineChange">
+              <type>
+                <UINT />
+              </type>
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml"> Add Retain Vars as used 
+ NOTE !!! Append a Var only at the End of declaration, 
+ otherwise the Logfile Crashes !!!</xhtml>
+              </documentation>
+            </variable>
+            <variable name="uiCountStart">
+              <type>
+                <UINT />
+              </type>
+            </variable>
+            <variable name="uiCountStop">
+              <type>
+                <UINT />
+              </type>
+            </variable>
+            <variable name="dYesterday">
+              <type>
+                <DATE />
+              </type>
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml"> Actual Data</xhtml>
+              </documentation>
+            </variable>
+          </struct>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>bc214d5a-ede7-4146-a0dd-701bc2c70236</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+      <dataType name="EN_FILE_ERROR">
+        <baseType>
+          <enum>
+            <values>
+              <value name="UnknownState" value="0" />
+              <value name="Busy" value="1" />
+              <value name="Done" value="2" />
+              <value name="FileCloseError" value="4" />
+              <value name="FileWriteError" value="5" />
+              <value name="FileReadError" value="6" />
+              <value name="FileOpenError" value="7" />
+            </values>
+          </enum>
+        </baseType>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>b45e203c-236c-4e8c-aecd-5a17e62d2017</ObjectId>
+          </data>
+        </addData>
+      </dataType>
+    </dataTypes>
+    <pous>
+      <pou name="PRG_PERSISTANT" pouType="program">
+        <interface>
+          <localVars>
+            <variable name="xRestore">
+              <type>
+                <BOOL />
+              </type>
+            </variable>
+            <variable name="xSave">
+              <type>
+                <BOOL />
+              </type>
+            </variable>
+            <variable name="bSavingState">
+              <type>
+                <derived name="EN_FILE_ERROR" />
+              </type>
+            </variable>
+            <variable name="bRestoringState">
+              <type>
+                <derived name="EN_FILE_ERROR" />
+              </type>
+            </variable>
+            <variable name="arByte">
+              <type>
+                <array>
+                  <dimension lower="0" upper="50" />
+                  <baseType>
+                    <BYTE />
+                  </baseType>
+                </array>
+              </type>
+              <documentation>
+                <xhtml xmlns="http://www.w3.org/1999/xhtml">Calc Checksum</xhtml>
+              </documentation>
+            </variable>
+            <variable name="i">
+              <type>
+                <DWORD />
+              </type>
+            </variable>
+            <variable name="rChecksum">
+              <type>
+                <REAL />
+              </type>
+            </variable>
+            <variable name="rChecksum_old">
+              <type>
+                <REAL />
+              </type>
+            </variable>
+            <variable name="dwCountSaveManual">
+              <type>
+                <DWORD />
+              </type>
+            </variable>
+            <variable name="dwCountRestoreManual">
+              <type>
+                <DWORD />
+              </type>
+            </variable>
+          </localVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">//=========================================================
+// +++ RESTORE MANUAL +++
+//=========================================================
+IF xRestore THEN
+	xRestore:=FALSE;
+	bRestoringState:=FC_RESTORE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );
+	dwCountRestoreManual:=dwCountRestoreManual+1;
+END_IF
+
+//=========================================================
+// +++ SAVE MANUAL +++
+//=========================================================
+IF xSave THEN
+	xSave:=FALSE;
+	bSavingState:=FC_SAVE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );
+	dwCountSaveManual:=dwCountSaveManual+1;
+END_IF
+
+//=========================================================
+// +++ CALCULATE CHECKSUM AND AUTO SAVE+++
+//=========================================================
+MemCopy(pDest:=ADR(arByte) , pSource:=ADR(GVL_PERSISTANT_DATA.utPersVar) , udiSize:=SIZEOF(ST_PERSISTANT_VAR));
+rChecksum:=0;
+FOR i:=0 TO SIZEOF(ST_PERSISTANT_VAR) BY 1 DO
+	rChecksum:=rChecksum + BYTE_TO_REAL(arByte[i])/1000;
+END_FOR
+IF rChecksum_old &lt;&gt; rChecksum THEN
+	xSave:=TRUE;
+	rChecksum_old:=rChecksum;
+END_IF
+</xhtml>
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>00da0286-4649-493c-ab18-1148ef65f96f</ObjectId>
+          </data>
+        </addData>
+      </pou>
+      <pou name="FC_RESTORE_PERS" pouType="function">
+        <interface>
+          <returnType>
+            <BYTE />
+          </returnType>
+          <localVars>
+            <variable name="bState">
+              <type>
+                <BYTE />
+              </type>
+            </variable>
+            <variable name="dwHandler">
+              <type>
+                <derived name="RTS_IEC_HANDLE" />
+              </type>
+            </variable>
+            <variable name="xFileClosedOK">
+              <type>
+                <BOOL />
+              </type>
+            </variable>
+            <variable name="lwByteWritten">
+              <type>
+                <LWORD />
+              </type>
+            </variable>
+            <variable name="Result">
+              <type>
+                <derived name="RTS_IEC_HANDLE" />
+              </type>
+            </variable>
+            <variable name="udiResult">
+              <type>
+                <UDINT />
+              </type>
+            </variable>
+          </localVars>
+          <inputVars>
+            <variable name="sFilename">
+              <type>
+                <string />
+              </type>
+            </variable>
+          </inputVars>
+          <inOutVars>
+            <variable name="myRetains">
+              <type>
+                <derived name="ST_PERSISTANT_VAR" />
+              </type>
+            </variable>
+          </inOutVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">bState:=1;
+dwHandler:=0;
+xFileClosedOK:=FALSE;
+// Open file
+dwHandler:=SysFileOpen(szFile:=GVL_CONFIG.sPersFilename , am:=ACCESS_MODE.AM_READ,pResult := Result );
+IF dwHandler &gt; 0 THEN
+	// Read file
+	lwByteWritten:=SysFileRead(hFile:=dwHandler , pbyBuffer:=ADR(GVL_PERSISTANT_DATA.utPersVar) , ulSize:=SIZEOF(ST_PERSISTANT_VAR),pResult:=Result );
+	IF lwByteWritten &gt;0 THEN
+		// Close file
+		udiResult:=SysFileClose(hFile:=dwHandler);
+		IF udiResult = SYS_FILE_STATUS.FS_OK THEN
+			bState:=2;
+		ELSE
+			bState:=4;
+		END_IF
+	ELSE
+		bState:=6;			
+	END_IF
+ELSE
+	bState:=7;	
+END_IF
+
+FC_RESTORE_PERS:=bState;
+
+</xhtml>
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>555f59af-098f-4282-848c-7891e1807b99</ObjectId>
+          </data>
+        </addData>
+      </pou>
+      <pou name="FC_SAVE_PERS" pouType="function">
+        <interface>
+          <returnType>
+            <BYTE />
+          </returnType>
+          <localVars>
+            <variable name="bState">
+              <type>
+                <BYTE />
+              </type>
+            </variable>
+            <variable name="dwHandler">
+              <type>
+                <derived name="RTS_IEC_HANDLE" />
+              </type>
+            </variable>
+            <variable name="xFileClosedOK">
+              <type>
+                <BOOL />
+              </type>
+            </variable>
+            <variable name="lwByteWritten">
+              <type>
+                <LWORD />
+              </type>
+            </variable>
+            <variable name="Result">
+              <type>
+                <derived name="RTS_IEC_HANDLE" />
+              </type>
+            </variable>
+            <variable name="udiResult">
+              <type>
+                <UDINT />
+              </type>
+            </variable>
+          </localVars>
+          <inputVars>
+            <variable name="sFilename">
+              <type>
+                <string />
+              </type>
+            </variable>
+          </inputVars>
+          <inOutVars>
+            <variable name="myRetains">
+              <type>
+                <derived name="ST_PERSISTANT_VAR" />
+              </type>
+            </variable>
+          </inOutVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">bState:=1;
+dwHandler:=0;
+xFileClosedOK:=FALSE;
+// Open file
+dwHandler:=SysFileOpen(szFile :=GVL_CONFIG.sPersFilename , am:=ACCESS_MODE.AM_WRITE, pResult := Result  );
+IF dwHandler &gt; 0 THEN
+	// Write file
+	lwByteWritten:=SysFileWrite(hFile:=dwHandler , pbyBuffer:=ADR(GVL_PERSISTANT_DATA.utPersVar) , ulSize:=SIZEOF(ST_PERSISTANT_VAR),pResult:=Result );
+	IF lwByteWritten &gt;0 THEN
+		// Close file
+		udiResult:=SysFileClose(hFile:=dwHandler );
+		IF udiResult = SYS_FILE_STATUS.FS_OK  THEN
+			bState:=2;
+		ELSE
+			bState:=4;
+		END_IF	
+	ELSE
+		bState:=5;		
+	END_IF	
+ELSE
+	bState:=7;	
+END_IF
+
+FC_SAVE_PERS:=bState;
+</xhtml>
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>6170313a-2b63-45f0-805b-1593082a2827</ObjectId>
+          </data>
+        </addData>
+      </pou>
+      <pou name="SYSEVT_ONLINE_CHANGE" pouType="function">
+        <interface>
+          <returnType>
+            <DWORD />
+          </returnType>
+          <inOutVars>
+            <variable name="EventPrm">
+              <type>
+                <derived name="CmpApp.EVTPARAM_CmpApp" />
+              </type>
+            </variable>
+          </inOutVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">// Count lling
+GVL_PERSISTANT_DATA.utPersVar.uiCountOnlineChange:=GVL_PERSISTANT_DATA.utPersVar.uiCountOnlineChange+1;
+// Do restore
+FC_RESTORE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );</xhtml>
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>8b2d07ed-51a7-4d7a-ac4d-33e0d0d7b631</ObjectId>
+          </data>
+        </addData>
+      </pou>
+      <pou name="SYSEVT_STOP" pouType="function">
+        <interface>
+          <returnType>
+            <DWORD />
+          </returnType>
+          <inOutVars>
+            <variable name="EventPrm">
+              <type>
+                <derived name="CmpApp.EVTPARAM_CmpAppStop" />
+              </type>
+            </variable>
+          </inOutVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">// Count Calling
+GVL_PERSISTANT_DATA.utPersVar.uiCountStop:=GVL_PERSISTANT_DATA.utPersVar.uiCountStop+1;	
+// Do Save
+FC_SAVE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );
+
+
+</xhtml>
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>d5a5db7f-a8be-470a-9e4b-34ac33ba2a4b</ObjectId>
+          </data>
+        </addData>
+      </pou>
+      <pou name="SYSEVT_START" pouType="function">
+        <interface>
+          <returnType>
+            <DWORD />
+          </returnType>
+          <inOutVars>
+            <variable name="EventPrm">
+              <type>
+                <derived name="CmpApp.EVTPARAM_CmpApp" />
+              </type>
+            </variable>
+          </inOutVars>
+        </interface>
+        <body>
+          <ST>
+            <xhtml xmlns="http://www.w3.org/1999/xhtml">//Count Calling
+GVL_PERSISTANT_DATA.utPersVar.uiCountStart:=GVL_PERSISTANT_DATA.utPersVar.uiCountStart+1;	
+// Do restore
+FC_RESTORE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );</xhtml>
+          </ST>
+        </body>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>533153d2-4f99-41e1-9952-242620ea0779</ObjectId>
+          </data>
+        </addData>
+      </pou>
+    </pous>
+  </types>
+  <instances>
+    <configurations />
+  </instances>
+  <addData>
+    <data name="http://www.3s-software.com/plcopenxml/globalvars" handleUnknown="implementation">
+      <globalVars name="GVL_PERSISTANT_DATA">
+        <variable name="utPersVar">
+          <type>
+            <derived name="ST_PERSISTANT_VAR" />
+          </type>
+        </variable>
+        <addData>
+          <data name="http://www.3s-software.com/plcopenxml/attributes" handleUnknown="implementation">
+            <Attributes>
+              <Attribute Name="qualified_only" Value="" />
+            </Attributes>
+          </data>
+          <data name="http://www.3s-software.com/plcopenxml/objectid" handleUnknown="discard">
+            <ObjectId>86c71425-e312-453e-bbb6-fb14c619107b</ObjectId>
+          </data>
+        </addData>
+      </globalVars>
+    </data>
+    <data name="http://www.3s-software.com/plcopenxml/projectstructure" handleUnknown="discard">
+      <ProjectStructure>
+        <Folder Name="Persistant">
+          <Object Name="ST_PERSISTANT_VAR" ObjectId="bc214d5a-ede7-4146-a0dd-701bc2c70236" />
+          <Object Name="GVL_PERSISTANT_DATA" ObjectId="86c71425-e312-453e-bbb6-fb14c619107b" />
+          <Object Name="PRG_PERSISTANT" ObjectId="00da0286-4649-493c-ab18-1148ef65f96f" />
+          <Object Name="FC_RESTORE_PERS" ObjectId="555f59af-098f-4282-848c-7891e1807b99" />
+          <Object Name="FC_SAVE_PERS" ObjectId="6170313a-2b63-45f0-805b-1593082a2827" />
+          <Object Name="EN_FILE_ERROR" ObjectId="b45e203c-236c-4e8c-aecd-5a17e62d2017" />
+        </Folder>
+        <Folder Name="System Events">
+          <Object Name="SYSEVT_ONLINE_CHANGE" ObjectId="8b2d07ed-51a7-4d7a-ac4d-33e0d0d7b631" />
+          <Object Name="SYSEVT_STOP" ObjectId="d5a5db7f-a8be-470a-9e4b-34ac33ba2a4b" />
+          <Object Name="SYSEVT_START" ObjectId="533153d2-4f99-41e1-9952-242620ea0779" />
+        </Folder>
+      </ProjectStructure>
+    </data>
+  </addData>
+</project>
