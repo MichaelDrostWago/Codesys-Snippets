@@ -1,0 +1,989 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">Persistant</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">738bea1e-99bb-4f04-90bb-a7a567e74e3a</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638833375600316129</Single>
+      </Single>
+      <Single Name="Object" Type="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" Method="IArchivable">
+        <Single Name="StructuredViewGuid" Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">System Events</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">738bea1e-99bb-4f04-90bb-a7a567e74e3a</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638833378422548506</Single>
+      </Single>
+      <Single Name="Object" Type="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" Method="IArchivable">
+        <Single Name="StructuredViewGuid" Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">42dc7784-8dc5-4ee7-b44c-f7f3bfb10fa2</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">Task Configuration</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">ae1de277-a207-4a28-9efb-456c06bd52f3</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638833381559982114</Single>
+      </Single>
+      <Single Name="Object" Type="{ae1de277-a207-4a28-9efb-456c06bd52f3}" Method="IArchivable">
+        <List Name="TaskConfigurationList" Type="{75fc8bb3-c744-4e99-b6eb-bb2796e19500}" />
+        <List Name="SystemEventList" Type="{7be1d5a4-d68c-4bc6-a7e5-e42a0ab42a09}" />
+        <Null Name="ExternalEventList" />
+        <Single Name="enum_guid" Type="System.Guid">3a738a21-8254-5954-9c02-dba5cf625184</Single>
+        <Single Name="jitter_distribution_guid" Type="System.Guid">a262e967-71c3-5b97-86ef-35addd234cbc</Single>
+        <Single Name="task_struct_guid" Type="System.Guid">faf12da6-e072-5b2f-9baf-ac6762b9a941</Single>
+        <Single Name="task_config_info_guid" Type="System.Guid">923127d2-8418-5de9-ae1b-a2e43c1c3c63</Single>
+        <Single Name="task_global_vars_guid" Type="System.Guid">7bccc8f2-b371-57c7-aac9-975c1e0cdd49</Single>
+        <Single Name="setup_call_pou_guid" Type="System.Guid">caa9cf01-b23b-5f5e-a859-4b0774d90fff</Single>
+        <Single Name="sys_setup_pou_guid" Type="System.Guid">141b1dfd-b3c5-5497-a00e-56170dc6211e</Single>
+        <Single Name="profiler_global_vars_guid" Type="System.Guid">b8d5bca1-70bf-5701-8824-1368debea9c7</Single>
+        <Single Name="profiler_init_code_guid" Type="System.Guid">012fb0dd-d7bf-5bfd-a051-67ebcbe46a6d</Single>
+        <Single Name="profiler_cycle_code_guid" Type="System.Guid">d5f34b15-e102-5c1f-a0df-d2754f7689e7</Single>
+        <Single Name="profiler_fb_guid" Type="System.Guid">9add49dc-7965-51c2-83b9-5f562b7c4bf9</Single>
+        <Single Name="profiler_method_reset_guid" Type="System.Guid">b0993757-4281-528d-84f0-c218fe8f4517</Single>
+        <Single Name="profiler_method_starttiming_guid" Type="System.Guid">42843f23-fa71-5954-a8d2-d63ec53a1ae5</Single>
+        <Single Name="profiler_method_stoptiming_guid" Type="System.Guid">1085002a-ed1d-5092-bc8b-73da42ae14e3</Single>
+        <Single Name="profiler_iectaskgetprofiling_guid" Type="System.Guid">fb321cbb-15f6-5da2-89ef-cc2706d4677e</Single>
+        <List2 Name="alSysEventList">
+          <Single Type="{357faaca-a279-4878-8c2f-ec7c49896fa3}" Method="IArchivable">
+            <Single Name="Eventname" Type="string">PrepareStop</Single>
+            <Single Name="Description" Type="string">Called before application stops. Context=Communication task. Debugging=Disabled</Single>
+            <Single Name="stComponentId" Type="string">CmpApp.EventIDs.CMPID_CmpApp</Single>
+            <Single Name="stEventId" Type="string">CmpApp.EventIDs.EVT_PrepareStop</Single>
+            <Single Name="stParameterId" Type="string">CmpApp.EventIDs.EVTPARAMID_CmpAppStop</Single>
+            <Single Name="stParameterVersion" Type="string">CmpApp.EventIDs.EVTVERSION_CmpAppStop</Single>
+            <Single Name="ParameterStruct" Type="string">CmpApp.EVTPARAM_CmpAppStop</Single>
+            <Null Name="Library" />
+            <Single Name="Active" Type="bool">True</Single>
+            <Single Name="FunctionToCall" Type="string">SYSEVT_STOP</Single>
+            <Single Name="Position" Type="short">1</Single>
+          </Single>
+          <Single Type="{357faaca-a279-4878-8c2f-ec7c49896fa3}" Method="IArchivable">
+            <Single Name="Eventname" Type="string">PrepareOnlineChange</Single>
+            <Single Name="Description" Type="string">Called before application online change. Context=Communication task. Debugging=Disabled</Single>
+            <Single Name="stComponentId" Type="string">CmpApp.EventIDs.CMPID_CmpApp</Single>
+            <Single Name="stEventId" Type="string">CmpApp.EventIDs.EVT_PrepareOnlineChange</Single>
+            <Single Name="stParameterId" Type="string">CmpApp.EventIDs.EVTPARAMID_CmpApp</Single>
+            <Single Name="stParameterVersion" Type="string">CmpApp.EventIDs.EVTVERSION_CmpApp</Single>
+            <Single Name="ParameterStruct" Type="string">CmpApp.EVTPARAM_CmpApp</Single>
+            <Null Name="Library" />
+            <Single Name="Active" Type="bool">True</Single>
+            <Single Name="FunctionToCall" Type="string">SYSEVT_ONLINE_CHANGE</Single>
+            <Single Name="Position" Type="short">2</Single>
+          </Single>
+          <Single Type="{357faaca-a279-4878-8c2f-ec7c49896fa3}" Method="IArchivable">
+            <Single Name="Eventname" Type="string">StartDone</Single>
+            <Single Name="Description" Type="string">Called after application starts. Context=Communication task. Debugging=Disabled</Single>
+            <Single Name="stComponentId" Type="string">CmpApp.EventIDs.CMPID_CmpApp</Single>
+            <Single Name="stEventId" Type="string">CmpApp.EventIDs.EVT_StartDone</Single>
+            <Single Name="stParameterId" Type="string">CmpApp.EventIDs.EVTPARAMID_CmpApp</Single>
+            <Single Name="stParameterVersion" Type="string">CmpApp.EventIDs.EVTVERSION_CmpApp</Single>
+            <Single Name="ParameterStruct" Type="string">CmpApp.EVTPARAM_CmpApp</Single>
+            <Null Name="Library" />
+            <Single Name="Active" Type="bool">True</Single>
+            <Single Name="FunctionToCall" Type="string">SYSEVT_START</Single>
+            <Single Name="Position" Type="short">2</Single>
+          </Single>
+        </List2>
+        <List2 Name="alTaskGroups">
+          <Single Type="{609a42d4-f974-4041-8548-f80e229ca5ed}" Method="IArchivable">
+            <Single Name="Groupname" Type="string">IEC-Tasks</Single>
+            <Single Name="Core" Type="int">0</Single>
+            <Single Name="DefaultGroup" Type="bool">True</Single>
+            <Single Name="Editable" Type="bool">False</Single>
+          </Single>
+        </List2>
+        <Single Name="sysevents_global_vars_guid" Type="System.Guid">77fb2d6f-bb75-5e37-b245-319d78177e65</Single>
+        <Single Name="sysevents_functionsblock_guid" Type="System.Guid">73415f88-d745-5e6b-bf2a-630a317d9097</Single>
+        <Single Name="sysevents_fbinit_method_guid" Type="System.Guid">cb3f7012-ce34-5b13-a224-a1afd611d708</Single>
+        <Single Name="sysevents_fbexit_method_guid" Type="System.Guid">09fb49ad-60ea-547e-a478-3d99a375038c</Single>
+        <Single Name="sysevents_eventcallback_method_guid" Type="System.Guid">8da49e58-1ec2-5feb-adcd-3abf4b8e87bb</Single>
+        <Single Name="sysevents_resetget_property_guid" Type="System.Guid">209e82d1-8934-5b04-9439-6c219328614d</Single>
+        <Array Name="parent_tasks" Type="System.Guid" />
+        <Single Name="device_app" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">b45e203c-236c-4e8c-aecd-5a17e62d2017</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">EN_FILE_ERROR</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">24568a24-c491-472c-a21f-ee5d33859fab</Single>
+            </Key>
+            <Value>
+              <Single Type="{24568a24-c491-472c-a21f-ee5d33859fab}" Method="IArchivable">
+                <Single Name="MemoryReserveForOnlineChange" Type="int">0</Single>
+                <Single Name="ExcludeFromBuild" Type="bool">False</Single>
+                <Single Name="External" Type="bool">False</Single>
+                <Single Name="EnableSystemCall" Type="bool">False</Single>
+                <Single Name="CompilerDefines" Type="string"></Single>
+                <Single Name="LinkAlways" Type="bool">False</Single>
+                <Array Name="Undefines" Type="string" />
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">2db5746d-d284-4425-9f7f-2663a34b0ebc</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833375600487426</Single>
+      </Single>
+      <Single Name="Object" Type="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">TYPE EN_FILE_ERROR :
+(
+	UnknownState := 0,
+	Busy := 1,
+	Done := 2,
+	FileCloseError := 4,
+	FileWriteError := 5,
+	FileReadError := 6,
+	FileOpenError := 7
+);
+END_TYPE
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">b45e203c-236c-4e8c-aecd-5a17e62d2017_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">23</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Persistant</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">bc214d5a-ede7-4146-a0dd-701bc2c70236</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">ST_PERSISTANT_VAR</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">2db5746d-d284-4425-9f7f-2663a34b0ebc</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833375600356716</Single>
+      </Single>
+      <Single Name="Object" Type="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">TYPE ST_PERSISTANT_VAR :
+STRUCT
+	/// Add Retain Vars as used 
+	/// NOTE !!! Append a Var only at the End of declaration, 
+	/// otherwise the Logfile Crashes !!!
+	uiCountOnlineChange		: UINT;	
+	uiCountStart			: UINT;
+	uiCountStop				: UINT;
+	
+	// Actual Data
+	dYesterday				: DATE;
+	
+END_STRUCT
+END_TYPE
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">bc214d5a-ede7-4146-a0dd-701bc2c70236_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">31</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Persistant</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">86c71425-e312-453e-bbb6-fb14c619107b</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">GVL_PERSISTANT_DATA</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">ffbfa93a-b94d-45fc-a329-229860183b1d</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833375600383462</Single>
+      </Single>
+      <Single Name="Object" Type="{ffbfa93a-b94d-45fc-a329-229860183b1d}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">{attribute 'qualified_only'}
+VAR_GLOBAL
+	utPersVar	: ST_PERSISTANT_VAR;
+END_VAR</Single>
+            <Single Name="LineInfoPersistence" Type="string">86c71425-e312-453e-bbb6-fb14c619107b_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Null Name="NetVarProperties" />
+        <Single Name="ParameterList" Type="bool">False</Single>
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Persistant</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">555f59af-098f-4282-848c-7891e1807b99</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">FC_RESTORE_PERS</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">24568a24-c491-472c-a21f-ee5d33859fab</Single>
+            </Key>
+            <Value>
+              <Single Type="{24568a24-c491-472c-a21f-ee5d33859fab}" Method="IArchivable">
+                <Single Name="MemoryReserveForOnlineChange" Type="int">0</Single>
+                <Single Name="ExcludeFromBuild" Type="bool">False</Single>
+                <Single Name="External" Type="bool">False</Single>
+                <Single Name="EnableSystemCall" Type="bool">False</Single>
+                <Single Name="CompilerDefines" Type="string"></Single>
+                <Single Name="LinkAlways" Type="bool">False</Single>
+                <Array Name="Undefines" Type="string" />
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833379177982787</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">bState:=1;
+dwHandler:=0;
+xFileClosedOK:=FALSE;
+// Open file
+dwHandler:=SysFileOpen(szFile:=GVL_CONFIG.sPersFilename , am:=ACCESS_MODE.AM_READ,pResult := Result );
+IF dwHandler &gt; 0 THEN
+	// Read file
+	lwByteWritten:=SysFileRead(hFile:=dwHandler , pbyBuffer:=ADR(GVL_PERSISTANT_DATA.utPersVar) , ulSize:=SIZEOF(ST_PERSISTANT_VAR),pResult:=Result );
+	IF lwByteWritten &gt;0 THEN
+		// Close file
+		udiResult:=SysFileClose(hFile:=dwHandler);
+		IF udiResult = SYS_FILE_STATUS.FS_OK THEN
+			bState:=2;
+		ELSE
+			bState:=4;
+		END_IF
+	ELSE
+		bState:=6;			
+	END_IF
+ELSE
+	bState:=7;	
+END_IF
+
+FC_RESTORE_PERS:=bState;
+
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">555f59af-098f-4282-848c-7891e1807b99_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION FC_RESTORE_PERS : BYTE
+VAR
+	bState				: BYTE;
+	dwHandler			: RTS_IEC_HANDLE;
+	xFileClosedOK		: BOOL;
+	lwByteWritten		: lWORD;
+	Result				:  RTS_IEC_HANDLE;
+	udiResult			: UDINT;
+END_VAR
+VAR_INPUT
+	sFilename	: STRING;
+END_VAR
+VAR_IN_OUT
+	myRetains	: ST_PERSISTANT_VAR;
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">555f59af-098f-4282-848c-7891e1807b99_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">85</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Persistant</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">6170313a-2b63-45f0-805b-1593082a2827</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">FC_SAVE_PERS</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">24568a24-c491-472c-a21f-ee5d33859fab</Single>
+            </Key>
+            <Value>
+              <Single Type="{24568a24-c491-472c-a21f-ee5d33859fab}" Method="IArchivable">
+                <Single Name="MemoryReserveForOnlineChange" Type="int">0</Single>
+                <Single Name="ExcludeFromBuild" Type="bool">False</Single>
+                <Single Name="External" Type="bool">False</Single>
+                <Single Name="EnableSystemCall" Type="bool">False</Single>
+                <Single Name="CompilerDefines" Type="string"></Single>
+                <Single Name="LinkAlways" Type="bool">False</Single>
+                <Array Name="Undefines" Type="string" />
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833379447881556</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">bState:=1;
+dwHandler:=0;
+xFileClosedOK:=FALSE;
+// Open file
+dwHandler:=SysFileOpen(szFile :=GVL_CONFIG.sPersFilename , am:=ACCESS_MODE.AM_WRITE, pResult := Result  );
+IF dwHandler &gt; 0 THEN
+	// Write file
+	lwByteWritten:=SysFileWrite(hFile:=dwHandler , pbyBuffer:=ADR(GVL_PERSISTANT_DATA.utPersVar) , ulSize:=SIZEOF(ST_PERSISTANT_VAR),pResult:=Result );
+	IF lwByteWritten &gt;0 THEN
+		// Close file
+		udiResult:=SysFileClose(hFile:=dwHandler );
+		IF udiResult = SYS_FILE_STATUS.FS_OK  THEN
+			bState:=2;
+		ELSE
+			bState:=4;
+		END_IF	
+	ELSE
+		bState:=5;		
+	END_IF	
+ELSE
+	bState:=7;	
+END_IF
+
+FC_SAVE_PERS:=bState;
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">6170313a-2b63-45f0-805b-1593082a2827_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION FC_SAVE_PERS : BYTE
+VAR
+	bState			: BYTE;
+	dwHandler		: RTS_IEC_HANDLE;
+	xFileClosedOK	: BOOL;
+	lwByteWritten	: lWORD;
+	Result			: RTS_IEC_HANDLE;
+	udiResult			: UDINT;
+END_VAR
+VAR_INPUT
+	sFilename	: STRING;
+END_VAR
+VAR_IN_OUT
+	myRetains	: ST_PERSISTANT_VAR;
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">6170313a-2b63-45f0-805b-1593082a2827_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">105</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Persistant</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">00da0286-4649-493c-ab18-1148ef65f96f</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">PRG_PERSISTANT</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">24568a24-c491-472c-a21f-ee5d33859fab</Single>
+            </Key>
+            <Value>
+              <Single Type="{24568a24-c491-472c-a21f-ee5d33859fab}" Method="IArchivable">
+                <Single Name="MemoryReserveForOnlineChange" Type="int">0</Single>
+                <Single Name="ExcludeFromBuild" Type="bool">False</Single>
+                <Single Name="External" Type="bool">False</Single>
+                <Single Name="EnableSystemCall" Type="bool">False</Single>
+                <Single Name="CompilerDefines" Type="string"></Single>
+                <Single Name="LinkAlways" Type="bool">False</Single>
+                <Array Name="Undefines" Type="string" />
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833375719285666</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">//=========================================================
+// +++ RESTORE MANUAL +++
+//=========================================================
+IF xRestore THEN
+	xRestore:=FALSE;
+	bRestoringState:=FC_RESTORE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );
+	dwCountRestoreManual:=dwCountRestoreManual+1;
+END_IF
+
+//=========================================================
+// +++ SAVE MANUAL +++
+//=========================================================
+IF xSave THEN
+	xSave:=FALSE;
+	bSavingState:=FC_SAVE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );
+	dwCountSaveManual:=dwCountSaveManual+1;
+END_IF
+
+//=========================================================
+// +++ CALCULATE CHECKSUM AND AUTO SAVE+++
+//=========================================================
+MemCopy(pDest:=ADR(arByte) , pSource:=ADR(GVL_PERSISTANT_DATA.utPersVar) , udiSize:=SIZEOF(ST_PERSISTANT_VAR));
+rChecksum:=0;
+FOR i:=0 TO SIZEOF(ST_PERSISTANT_VAR) BY 1 DO
+	rChecksum:=rChecksum + BYTE_TO_REAL(arByte[i])/1000;
+END_FOR
+IF rChecksum_old &lt;&gt; rChecksum THEN
+	xSave:=TRUE;
+	rChecksum_old:=rChecksum;
+END_IF
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">00da0286-4649-493c-ab18-1148ef65f96f_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">PROGRAM PRG_PERSISTANT
+VAR
+		xRestore			: BOOL;
+	xSave					: BOOL;
+	bSavingState			: EN_FILE_ERROR;
+	bRestoringState			: EN_FILE_ERROR;
+	///Calc Checksum
+	arByte					: ARRAY[0..50] OF BYTE;// Anzahl der Bytes an die Variablenstruktur RetainVar je nach Bedarf anpassen.
+	i						: DWORD;
+	rChecksum				: REAL;
+	rChecksum_old			: REAL;
+	dwCountSaveManual		: DWORD;
+	dwCountRestoreManual	: DWORD;
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">00da0286-4649-493c-ab18-1148ef65f96f_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">46</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">22ef59de-7418-4321-928a-e789ad41c0e1</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">Persistant</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">8b2d07ed-51a7-4d7a-ac4d-33e0d0d7b631</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">SYSEVT_ONLINE_CHANGE</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">24568a24-c491-472c-a21f-ee5d33859fab</Single>
+            </Key>
+            <Value>
+              <Single Type="{24568a24-c491-472c-a21f-ee5d33859fab}" Method="IArchivable">
+                <Single Name="MemoryReserveForOnlineChange" Type="int">0</Single>
+                <Single Name="ExcludeFromBuild" Type="bool">False</Single>
+                <Single Name="External" Type="bool">False</Single>
+                <Single Name="EnableSystemCall" Type="bool">False</Single>
+                <Single Name="CompilerDefines" Type="string"></Single>
+                <Single Name="LinkAlways" Type="bool">False</Single>
+                <Array Name="Undefines" Type="string" />
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833378422565040</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">// Count lling
+GVL_PERSISTANT_DATA.utPersVar.uiCountOnlineChange:=GVL_PERSISTANT_DATA.utPersVar.uiCountOnlineChange+1;
+// Do restore
+FC_RESTORE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );</Single>
+            <Single Name="LineInfoPersistence" Type="string">8b2d07ed-51a7-4d7a-ac4d-33e0d0d7b631_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION SYSEVT_ONLINE_CHANGE : DWORD
+VAR_IN_OUT
+	EventPrm: CmpApp.EVTPARAM_CmpApp;
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">8b2d07ed-51a7-4d7a-ac4d-33e0d0d7b631_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">21</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">System Events</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">533153d2-4f99-41e1-9952-242620ea0779</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">SYSEVT_START</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833382149764747</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">//Count Calling
+GVL_PERSISTANT_DATA.utPersVar.uiCountStart:=GVL_PERSISTANT_DATA.utPersVar.uiCountStart+1;	
+// Do restore
+FC_RESTORE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );</Single>
+            <Single Name="LineInfoPersistence" Type="string">533153d2-4f99-41e1-9952-242620ea0779_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION SYSEVT_START : DWORD
+VAR_IN_OUT
+	EventPrm: CmpApp.EVTPARAM_CmpApp;
+END_VAR
+VAR
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">533153d2-4f99-41e1-9952-242620ea0779_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">11</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">System Events</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">d5a5db7f-a8be-470a-9e4b-34ac33ba2a4b</Single>
+        <Single Name="ParentGuid" Type="System.Guid">625e3a07-8a9d-404b-b2ab-e4a621dd2623</Single>
+        <Single Name="Name" Type="string">SYSEVT_STOP</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">24568a24-c491-472c-a21f-ee5d33859fab</Single>
+            </Key>
+            <Value>
+              <Single Type="{24568a24-c491-472c-a21f-ee5d33859fab}" Method="IArchivable">
+                <Single Name="MemoryReserveForOnlineChange" Type="int">0</Single>
+                <Single Name="ExcludeFromBuild" Type="bool">False</Single>
+                <Single Name="External" Type="bool">False</Single>
+                <Single Name="EnableSystemCall" Type="bool">False</Single>
+                <Single Name="CompilerDefines" Type="string"></Single>
+                <Single Name="LinkAlways" Type="bool">False</Single>
+                <Array Name="Undefines" Type="string" />
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638833378422596958</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">// Count Calling
+GVL_PERSISTANT_DATA.utPersVar.uiCountStop:=GVL_PERSISTANT_DATA.utPersVar.uiCountStop+1;	
+// Do Save
+FC_SAVE_PERS(sFilename:=GVL_CONFIG.sPersFilename , myRetains:=GVL_PERSISTANT_DATA.utPersVar );
+
+
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">d5a5db7f-a8be-470a-9e4b-34ac33ba2a4b_Impl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Single Name="TextBlobForSerialisation" Type="string">FUNCTION SYSEVT_STOP : DWORD
+VAR_IN_OUT
+	EventPrm: CmpApp.EVTPARAM_CmpAppStop;
+END_VAR
+</Single>
+            <Single Name="LineInfoPersistence" Type="string">d5a5db7f-a8be-470a-9e4b-34ac33ba2a4b_Decl_LineIds</Single>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">16</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">4ed7eaeb-6028-4c92-b7ba-bb6bbed7e85a</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">Device</Single>
+        <Single Type="string">SPS-Logik</Single>
+        <Single Type="string">Application</Single>
+        <Single Type="string">System Events</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Single Name="ProfileName" Type="string">CODESYS V3.5 SP19 Patch 7</Single>
+</Single>  </StructuredView>
+</ExportFile>
